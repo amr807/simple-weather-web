@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <title>weather Page</title>
+  </head>
+  <header class="head">Weather web</header>
+
+  <body>
+    <div class="event">
+      <form action="/weather" method="post">
+        <input type="text" name="input" placeholder="enter your city" />
+        <input value="get weather" id="bt" class="Btn" type="submit" />
+      </form>
+      </div>
+      <div class="post"><% if(temp !== null){ %> <%=temp%></div>
+      <%}%>
+      <div class="error"><% if(error !== null){ %> <%=error%> <%}%></div>
+    
+  </body>
+</html>
